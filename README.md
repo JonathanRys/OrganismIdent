@@ -16,4 +16,4 @@ Current Goals:
 
 ### Current Collaborators
 * Chris Kottmyer - Backend/Database
-* Johnathan Rys - Front-end/Web Dev
+* Jonathan Rys - Front-end/Web Dev
