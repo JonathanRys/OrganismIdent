@@ -14,6 +14,6 @@ Current Goals:
 * Range Identification
 * Image Recognition
 
-Current Collaborators
-Chris Kottmyer - Backend/Database
-Johnathan Rys - Front-end/Web Dev
+### Current Collaborators
+* Chris Kottmyer - Backend/Database
+* Johnathan Rys - Front-end/Web Dev
