@@ -1,4 +1,4 @@
-# Organism Identification
+# Organism Identification (OI)
 
 Current Goals:
 
@@ -13,3 +13,7 @@ Current Goals:
 ## Concepts:
 * Range Identification
 * Image Recognition
+
+Current Collaborators
+Chris Kottmyer - Backend/Database
+Johnathan Rys - Front-end/Web Dev
