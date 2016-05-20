@@ -1,0 +1,5 @@
+var data = {
+    "edible": "Excellent",
+    "warnings": "This pepper is very spicy: Scoville rating: 2,000,000",
+    "impact": "Safe to harverst"
+}

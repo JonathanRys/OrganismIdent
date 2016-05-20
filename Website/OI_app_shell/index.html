@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <!--<link rel="import" href="templates.html"> import the templates as js strings-->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" href="favicon.ico">
+        <!--https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css-->
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        <title>Organism Identifier</title>
+    </head>
+    <body>
+        <nav>
+            <div class="actions">
+                <i id="history-icon" class="fa fa-chevron-down"></i>
+                <ul id="history-list" class="menu-list">
+                    <div class="arrow arrow-left"></div>
+                    <li>History</li>
+                </ul>
+            </div>
+            <div class="icons">
+                <i id="edible" class="fa fa-cutlery"></i>
+                <i id="warnings" class="fa fa-warning"></i>
+                <i id="impact" class="fa fa-envira"></i>
+            </div>
+            <div class="menu">
+                <i id="menu-icon" class="fa fa-navicon"></i>
+
+                <ul id="menu-list" class="menu-list">
+                    <div class="arrow arrow-right"></div>
+                    <li id="search">Search</li>
+                    <li id="new">Submit new image</li>
+                    <li id="options">Options</li>
+                </ul>
+            </div>
+        </nav>
+        <header class="app-header">
+            <h2>Organism Identifier</h2>
+        </header>
+        <main>
+            <article id="main">
+                <header class="article-header">Capsicum chinense</header>
+                <section class="content-area">
+                    <div><span>Common Name: </span>Habanero</div>
+                    <figure><img src="./img/d06a82e9c9b83dbc283a7a8f.jpg">
+                        <figcaption>Capsicum chinense</figcaption>
+                    </figure>
+                </section>
+            
+            <aside id="side-bar">
+                <header class="side-bar-header">Similar Species</header>
+                <section class="similar-species">
+                    <figure><img src="./img/a530d7ce6b128c9d651e9f0a.jpg">
+                        <figcaption>Capsicum annuum</figcaption>
+                    </figure>
+                </section>
+
+            </aside>
+            </article>
+        </main>
+
+        <!--This is a mock payload-->
+        <script src="./js/payload.json"></script>
+
+        <!-- MVC Scripts -->
+        <script src="./js/views.js"></script>
+        <script src="./js/models.js"></script>
+
+        <!--HTML templates-->
+        <script src="./js/templates.js"></script>
+        <!--<script src="./js/handlers.js"></script>-->
+
+        <script src="./js/init.js"></script>
+        <script>
+        </script>
+    </body>
+</html>

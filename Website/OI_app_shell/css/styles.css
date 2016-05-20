@@ -1,0 +1,162 @@
+@charset=UTF-8;
+html,
+body{
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.actions{
+    float: left;
+    width: 15%;
+}
+.icons{
+    float: left;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+.menu{
+    float: right;
+    width: 15%;
+}
+.menu i{
+    float: right;
+    font-size: 1.1em;
+}
+.arrow{
+    transform: rotate(45deg);
+    height: 10px;
+    width: 10px;
+    margin-top: -11px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    background-color: #ddd;
+}
+.arrow-right{
+    float: right;
+}
+.arrow-left{
+    float: left;
+}
+#menu-list{
+    right: 4px;
+}
+#history-list{
+    left: 4px;
+}
+#history-icon{
+    color: #444;
+}
+.menu-list{
+    display: none;
+    background-color: #ddd;
+    border: 1px solid black;
+    font-size: 14px;
+    margin: 0;
+    padding: 5px;
+    position: absolute;
+    top: 28px;
+}
+.menu-list li{
+    list-style-type: none;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.fa{
+    cursor: pointer;
+}
+.fa-cutlery{
+    color: green;
+    text-shadow: 1px  1px 0px white,
+                -1px  1px 0px white,
+                 1px -1px 0px white,
+                -1px -1px 0px white;
+}
+.fa-warning{
+    color: orange;
+    text-shadow: 1px  1px 0px white,
+                -1px  1px 0px white,
+                 1px -1px 0px white,
+                -1px -1px 0px white;
+}
+.fa-envira{
+    color: yellowgreen;
+    text-shadow: 1px  1px 0px white,
+                -1px  1px 0px white,
+                 1px -1px 0px white,
+                -1px -1px 0px white;
+}
+nav{
+    background-color: #ccc;
+    padding: 5px 8px;
+    min-height: 20px;
+}
+header{
+    text-align: center;
+}
+header.app-header{
+    background-color: #5494d5; /*#54a4e5; old color*/
+}
+header h2{
+    /*Choose a different font*/
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    padding: 5px;
+    text-shadow: 1px  1px 0px #eee,
+                -1px  1px 0px #eee,
+                 1px -1px 0px #eee,
+                -1px -1px 0px #eee;
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+.article-header{
+    background: #eeb;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+    padding: 10px 3px 5px;
+}
+
+
+article .content-area{
+    float:left;
+    width: 75%;
+}
+
+
+#side-bar figure{
+    width: 90%;
+    margin: 5%;
+}
+#side-bar figure>img{
+    width: 100%;
+}
+header.side-bar-header{
+    background: #ccc;
+    border-bottom: 1px solid black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+aside{
+    background: white;
+    border: 1px solid black;
+    margin-top: 15%;
+    position: absolute;
+    right: 0;
+    width: 25%;
+}
+.similar-species figcaption{
+    font-size: 10px;
+}
+.content-area figcaption,
+.similar-species figcaption{
+    font-style: italic;
+}
