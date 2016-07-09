@@ -5,6 +5,10 @@ body{
     margin: 0;
     padding: 0;
 }
+body{
+    margin-top: 75px;
+    overflow-y: scroll;
+}
 .actions{
     float: left;
     width: 15%;
@@ -23,6 +27,20 @@ body{
     float: right;
     font-size: 1.1em;
 }
+.tab{
+    background-color: #ccc;
+    border: 1px solid black;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    left: 0;
+    margin-left: -20px;
+    padding: 2px;
+    position: absolute;
+    top: 43%;
+}
 .arrow{
     transform: rotate(45deg);
     height: 10px;
@@ -40,9 +58,11 @@ body{
 }
 #menu-list{
     right: 4px;
+    z-index: 999;
 }
 #history-list{
     left: 4px;
+    z-index: 999;
 }
 #history-icon{
     color: #444;
@@ -87,16 +107,25 @@ body{
                  1px -1px 0px white,
                 -1px -1px 0px white;
 }
+#fixed-header-content{
+    left: 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
 nav{
     background-color: #ccc;
     padding: 5px 8px;
     min-height: 20px;
+    position: relative;
 }
 header{
     text-align: center;
+    position: relative;
 }
 header.app-header{
     background-color: #5494d5; /*#54a4e5; old color*/
+    border-bottom: 1px solid black;
 }
 header h2{
     /*Choose a different font*/
@@ -109,28 +138,72 @@ header h2{
                  1px -1px 0px #eee,
                 -1px -1px 0px #eee;
 }
+details{
+    
+}
+summary{
+    background-color: #ddd;
+    font-size: large;
+    font-weight: bold;
+    outline: none;
+    padding: 2px 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+details p:last-child {
+    margin-bottom: 40px;
+}
+.section-head{
+    /*margin: 20px 40px;*/
+    margin: 20px 30px 20px 10px;
+}
+.section-head p {
+    padding-left: 8px;
+    text-indent: 20px;
+}
 
 .clearfix{
     clear: both;
 }
 
-
 .article-header{
-    background: #eeb;
-    font-style: italic;
+    background: #7cf;
     font-weight: bold;
     font-size: 22px;
     margin-top: 10px;
     padding: 10px 3px 5px;
 }
-
+.common-name{
+    font-weight: 700;
+}
+.binomial-name{
+    font-style: italic;
+    font-weight: 400;
+}
 
 article .content-area{
     float:left;
     width: 75%;
 }
 
-
+#type-image{
+    float: right;
+    margin: 0;
+    max-width: 40%;
+}
+#type-image>img{
+    max-width: 100%;
+}
+#main-content{
+    transition: width 0.5s;
+    transition-timing-function: ease-in;
+}
+#side-bar{
+    top: 140px;
+    position: fixed;
+    transition: right 0.5s;
+    transition-timing-function: ease-in;
+}
 #side-bar figure{
     width: 90%;
     margin: 5%;
@@ -138,9 +211,14 @@ article .content-area{
 #side-bar figure>img{
     width: 100%;
 }
+#similar-image{
+    
+}
 header.side-bar-header{
     background: #ccc;
     border-bottom: 1px solid black;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
     font-size: 12px;
     font-weight: bold;
     padding: 5px;
@@ -148,10 +226,17 @@ header.side-bar-header{
 aside{
     background: white;
     border: 1px solid black;
-    margin-top: 15%;
+    border-radius: 5px;
     position: absolute;
     right: 0;
     width: 25%;
+}
+figure{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+figcaption{
+    margin-bottom: 5px;
 }
 .similar-species figcaption{
     font-size: 10px;

@@ -1,5 +1,5 @@
 var data = {
     "edible": "Excellent",
-    "warnings": "This pepper is very spicy: Scoville rating: 2,000,000",
-    "impact": "Safe to harverst"
+    "warnings": "This pepper is very spicy: Scoville rating: 100,000-500,000",
+    "impact": "OK to harverst - not at risk"
 }

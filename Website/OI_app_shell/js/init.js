@@ -9,29 +9,49 @@ window.onload = function() {
      **********************************/
 
     // Menu handlers
-    var menu = document.getElementById('menu-icon');
+    var menuIcon = document.getElementById('menu-icon');
 
-    menu.addEventListener("click", function(){
-        var menu = document.getElementById('menu-list');
+    menuIcon.addEventListener('click', function(){
+        var menuList = document.getElementById('menu-list');
 
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
+        if (menuList.style.display === 'block') {
+            menuList.style.display = 'none';
         }
         else {
-            menu.style.display = "block";
+            menuList.style.display = 'block';
         }
     });
 
-    var history = document.getElementById('history-icon');
+    var historyIcon = document.getElementById('history-icon');
 
-    history.addEventListener("click", function(){
-        var menu = document.getElementById('history-list');
+    historyIcon.addEventListener('click', function(){
+        var historyList = document.getElementById('history-list');
 
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
+        if (historyList.style.display === 'block') {
+            historyList.style.display = 'none';
         }
         else {
-            menu.style.display = "block";
+            historyList.style.display = 'block';
+        }
+    });
+
+    var sideBarTab = document.getElementById('side-bar-tab');
+
+    sideBarTab.addEventListener('click', function(){
+        var sideBar = document.getElementById('side-bar'),
+            tab = document.getElementById('side-bar-tab'),
+            content = document.getElementById('main-content');
+
+        if (sideBar.style.right === '-25%') {
+            sideBar.style.right = '0';
+            content.style.width = '75%';
+            tab.childNodes[0].className = 'fa fa-chevron-left';
+        }
+        else {
+            sideBar.style.right = '-25%';
+            content.style.width = '100%';
+            tab.childNodes[0].className = 'fa fa-chevron-right';
+
         }
     });
 };
