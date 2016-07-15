@@ -1,5 +1,5 @@
 window.onload = function() {
-    views.load();
+    view.load();
 
 
     /**********************************
@@ -8,7 +8,8 @@ window.onload = function() {
      **********************************
      **********************************/
 
-    // Menu handlers
+    // Menu Handlers
+    //    Menu expanders
     var menuIcon = document.getElementById('menu-icon');
 
     menuIcon.addEventListener('click', function(){
@@ -35,6 +36,41 @@ window.onload = function() {
         }
     });
 
+    //    Menu click events
+    var menuList = document.getElementById('menu-list');
+
+    menuList.addEventListener('click', function(e){
+        if (e.target.className.match('menu-item')) {
+            switch(e.target.id) {
+                case "search":
+                    console.log("Oh, so now you want my help?");
+                    break;
+                case "submit":
+                    console.log("Give in to the rise of the machines");
+                    break;
+                case "options":
+                    console.log("No, no you're doing it wrong");
+                    break;
+            }
+            menuIcon.click();
+        }
+    });
+
+    var historyList = document.getElementById('history-list');
+    
+    historyList.addEventListener('click', function(e){
+        if (e.target.className.match('menu-item')) {
+            switch(e.target.id) {
+                case "history":
+                    console.log("A long time ago in a galaxy far, far away...");
+                    break;
+            }
+            historyIcon.click();
+        }
+    });
+
+    // Side-bar events
+    //    Side-bar slide event
     var sideBarTab = document.getElementById('side-bar-tab');
 
     sideBarTab.addEventListener('click', function(){
@@ -42,13 +78,13 @@ window.onload = function() {
             tab = document.getElementById('side-bar-tab'),
             content = document.getElementById('main-content');
 
-        if (sideBar.style.right === '-25%') {
+        if (sideBar.style.right === '-20%') {
             sideBar.style.right = '0';
-            content.style.width = '75%';
+            content.style.width = '80%';
             tab.childNodes[0].className = 'fa fa-chevron-left';
         }
         else {
-            sideBar.style.right = '-25%';
+            sideBar.style.right = '-20%';
             content.style.width = '100%';
             tab.childNodes[0].className = 'fa fa-chevron-right';
 
