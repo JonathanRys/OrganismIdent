@@ -251,3 +251,8 @@ figcaption{
 .similar-species figcaption{
     font-style: italic;
 }
+.similar-species p{
+    font-size: 12px;
+    padding: 0 5px;
+
+}

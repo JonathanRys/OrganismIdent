@@ -5,15 +5,37 @@
 'use strict';
  
 const CacheNames = {
-    MENU: 'mdm-fonts-v2'
+    APP_SHELL: 'oi-shell-v0',
+
 };
  
 // Replaced by server
-const URLS_TO_CACHE = ["https://cdn-static-1.medium.com/_/fp/css/fonts-base.by5Oi_VbnwEIvhnWIsuUjA.css"]
+const URLS_TO_CACHE = ['/index.html',
+                       '/favicon.ico',
+                       '/css/styles.css',
+                       '/css/font-awesome.min.css',
+/*
+                       '/fonts/fontawesome-webfont.eot',
+                       '/fonts/fontawesome-webfont.svg',
+                       '/fonts/fontawesome-webfont.ttf',
+                       '/fonts/fontawesome-webfont.woff',
+                       '/fonts/fontawesome-webfont.woff2',
+                       '/fonts/fontawesome-webfont.woff2?v=4.6.1',
+*/
+                       'https://fonts.googleapis.com/css?family=Open+Sans:400,700',
+                       '/js/init.js',
+                       '/js/models.js',
+                       '/js/payload.json',
+                       '/js/sw.js',
+                       '/js/templates.js',
+                       '/js/views.js']
+
+                       //'/img/a530d7ce6b128c9d651e9f0a.jpg',
+                       //'/img/d06a82e9c9b83dbc283a7a8f.jpg',
 
 self.oninstall = function (e) {
     e.waitUntil(
-        caches.open(CacheNames.MENU)
+        caches.open(CacheNames.APP_SHELL)
             .then(function (cache) {
                 return cache.addAll(URLS_TO_CACHE.map(function (url) {
                     return new Request(url, { mode: 'no-cors' })
