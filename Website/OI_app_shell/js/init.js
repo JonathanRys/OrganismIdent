@@ -1,7 +1,13 @@
 window.onload = function() {
     view.load();
 
-
+    //Code to hide the image container in sections without images
+    var hiddenImages = document.querySelectorAll('.hide-parent');
+    for (var x in hiddenImages) {
+        if (hiddenImages.hasOwnProperty(x)) {
+            hiddenImages[x].parentNode.style.display = 'none';
+        }
+    };
     /**********************************
      **********************************
      ********* EVENT HANDLERS *********

@@ -6,6 +6,7 @@ var view = function () {
         model.subscribe("warnings");
         model.subscribe("impact");
         //...
+        
     }
 
 
@@ -51,7 +52,8 @@ var view = function () {
                 //Insert the caption
                 sectionTemplate = sectionTemplate.replace('{{caption}}', model.getData('caption'));
             } else {
-                sectionTemplate = sectionTemplate.replace('{{image}}', '" style="display:none;');
+                //sectionTemplate = sectionTemplate.replace('{{image}}', '" style="display:none;');
+                sectionTemplate = sectionTemplate.replace('{{image}}', '" class="hide-parent');
                 //Remove the caption
                 sectionTemplate = sectionTemplate.replace('{{caption}}', '');
             }

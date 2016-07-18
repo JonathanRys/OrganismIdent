@@ -1,4 +1,13 @@
 @charset=UTF-8;
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Regular.woff);
+}
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../fonts/OpenSans-Bold.woff);
+}
 html,
 body{
     font-family: "Open Sans", Arial, sans-serif;
@@ -140,7 +149,8 @@ header.app-header{
 }
 header h2{
     /*Choose a different font*/
-    font-weight: 700;
+    /*font-weight: 700;*/
+    font-family: "Open Sans Bold";
     color: #333;
     margin: 0;
     padding: 5px;
@@ -189,7 +199,8 @@ details p:last-child {
 }
 .binomial-name{
     font-style: italic;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-family: "Open Sans";
 }
 
 article .content-area{
