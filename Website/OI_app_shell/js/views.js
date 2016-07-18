@@ -5,11 +5,12 @@ var view = function () {
         model.subscribe("edible");
         model.subscribe("warnings");
         model.subscribe("impact");
+        //...
     }
 
 
-    // make private
-    me.swap = function() {
+    // make private?
+    me.render = function() {
         var index,
             pageContent
 

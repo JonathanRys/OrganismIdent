@@ -22,11 +22,12 @@ const URLS_TO_CACHE = ['/index.html',
                        '/fonts/fontawesome-webfont.woff2',
                        '/fonts/fontawesome-webfont.woff2?v=4.6.1',
 */
-                       'https://fonts.googleapis.com/css?family=Open+Sans:400,700',
+                       //'https://fonts.googleapis.com/css?family=Open+Sans:400,700',
                        '/js/init.js',
                        '/js/models.js',
                        '/js/payload.json',
-                       '/js/sw.js',
+                       '/sw.js',
+                       "fake.js",
                        '/js/templates.js',
                        '/js/views.js']
 
@@ -34,6 +35,7 @@ const URLS_TO_CACHE = ['/index.html',
                        //'/img/d06a82e9c9b83dbc283a7a8f.jpg',
 
 self.oninstall = function (e) {
+    alert("installing")
     e.waitUntil(
         caches.open(CacheNames.APP_SHELL)
             .then(function (cache) {
@@ -46,6 +48,7 @@ self.oninstall = function (e) {
 }
  
 self.onactivate = function (e) {
+    alert("Activating")
     var validCaches = {}
     Object.keys(CacheNames).forEach(function (key) {
         return validCaches[CacheNames[key]] = true
@@ -65,6 +68,7 @@ self.onactivate = function (e) {
 }
  
 self.onfetch = function (e) {
+    alert("Fetching");
     if (URLS_TO_CACHE.indexOf(e.request.url) == -1) return
  
     e.respondWith(

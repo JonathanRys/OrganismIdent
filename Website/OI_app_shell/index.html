@@ -47,8 +47,9 @@
         </div>
 
         <script>
+            // Install the service worker
             if (navigator.serviceWorker) {
-                navigator.serviceWorker.register('./js/sw.js').then(function(reg){
+                navigator.serviceWorker.register('./sw.js').then(function(reg){
                     console.log('Success:', reg);
                 }).catch(function(err){
                     console.log('Service worker error:', err);
@@ -70,12 +71,12 @@
 
 
         <script>
-            // Load the mock payload.
-            //   The service worker will handle this in the future
+            // The service worker and/or backend will handle all of this in the future
             var contentArea = document.getElementById('main');
+            // Load the mock payload into the model.
             model.populate(data);
-
-            contentArea.innerHTML = view.swap();
+            // 
+            contentArea.innerHTML = view.render();
         </script>
 
 
