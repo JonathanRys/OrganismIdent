@@ -48,7 +48,7 @@ var view = function () {
 
             //Insert the image if it exists, or hide it
             if (imageData[x]) {
-                sectionTemplate = sectionTemplate.replace('{{image}}', imageData[x].imgPath);
+                sectionTemplate = sectionTemplate.replace(/\{\{image\}\}/g, imageData[x].imgPath);
                 //Insert the caption
                 sectionTemplate = sectionTemplate.replace('{{caption}}', imageData[x].imgCaption);
             } else {

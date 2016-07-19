@@ -219,7 +219,7 @@ article .content-area{
     width: 90%;
     margin: 10px;
 }
-#side-bar figure>img{
+#side-bar figure>a>img{
     width: 100%;
 }
 #similar-image{

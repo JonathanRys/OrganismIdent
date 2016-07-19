@@ -9,7 +9,7 @@ var template = function () {
 
     me.speciesDescription = '<details class="section-head" id="section-description" open>\n' + 
                             '    <summary>Description</summary>\n' +
-                            '    <figure id="type-image" class="section-image"><img src="{{image}}">\n' +
+                            '    <figure id="type-image" class="section-image"><a href="{{image}}"><img src="{{image}}"></a>\n' +
                             '        <figcaption>{{caption}}</figcaption>\n' +
                             '    </figure>\n' +
                             '    {{content}}' +
@@ -17,7 +17,7 @@ var template = function () {
 
     me.speciesSection     = '<details class="section-head" id="section-{{section}}">\n' + 
                             '    <summary>{{sectionHead}}</summary>\n' +
-                            '    <figure class="section-image"><img src="{{image}}">\n' + //data.images[section]? '"': '" style="display:none;"'
+                            '    <figure class="section-image"><a href="{{image}}"><img src="{{image}}"></a>\n' + //data.images[section]? '"': '" style="display:none;"'
                             '        <figcaption>{{caption}}</figcaption>\n' +
                             '    </figure>\n' +
                             '    {{content}}' +
@@ -27,7 +27,7 @@ var template = function () {
 
 
     me.similarSpecies     = '<section class="similar-species">\n' +
-                            '    <figure id="similar-image"><img src="{{typeImage}}">\n' +
+                            '    <figure id="similar-image"><a href="{{typeImage}}"><img src="{{typeImage}}"></a>\n' +
                             '        <figcaption>{{name}}</figcaption>\n' +
                             '    </figure>\n' +
                             '    <p>{{information}}</p>\n' +
