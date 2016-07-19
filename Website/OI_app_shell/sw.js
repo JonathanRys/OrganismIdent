@@ -10,31 +10,31 @@ const CacheNames = {
 };
  
 // Replaced by server
-const URLS_TO_CACHE = ['index.html',
-                       'favicon.ico',
-                       'css/styles.css',
-                       'css/font-awesome.min.css',
-/*
-                       'fonts/fontawesome-webfont.eot',
-                       'fonts/fontawesome-webfont.svg',
-                       'fonts/fontawesome-webfont.ttf',
-                       'fonts/fontawesome-webfont.woff',
-                       'fonts/fontawesome-webfont.woff2',
-                       'fonts/fontawesome-webfont.woff2?v=4.6.1',
-*/
-                       'fonts/OpenSans-Regular.woff',
-                       'fonts/OpenSans-Bold.woff',
+const URLS_TO_CACHE = ['http://localhost/OI_app_shell/index.html',
+                       'http://localhost/OI_app_shell/favicon.ico',
+                       'http://localhost/OI_app_shell/css/styles.css',
+                       'http://localhost/OI_app_shell/css/font-awesome.min.css',
 
-                       'img/a530d7ce6b128c9d651e9f0a.jpg',
-                       'img/d06a82e9c9b83dbc283a7a8f.jpg',
+                       'http://localhost/OI_app_shell/fonts/fontawesome-webfont.eot?v=4.6.1',
+                       'http://localhost/OI_app_shell/fonts/fontawesome-webfont.svg?v=4.6.1',
+                       'http://localhost/OI_app_shell/fonts/fontawesome-webfont.ttf?v=4.6.1',
+                       'http://localhost/OI_app_shell/fonts/fontawesome-webfont.woff?v=4.6.1',
+                       'http://localhost/OI_app_shell/fonts/fontawesome-webfont.woff2?v=4.6.1',
+
+                       'http://localhost/OI_app_shell/fonts/OpenSans-Regular.woff',
+                       'http://localhost/OI_app_shell/fonts/OpenSans-Bold.woff',
+
+                       'http://localhost/OI_app_shell/img/a530d7ce6b128c9d651e9f0a.jpg',
+                       'http://localhost/OI_app_shell/img/d06a82e9c9b83dbc283a7a8f.jpg',
+                       'http://localhost/OI_app_shell/img/d06a82e9c9b83dbc283a7a90.jpg',
 
                        //'https://fonts.googleapis.com/css?family=Open+Sans:400,700',
-                       'js/init.js',
-                       'js/models.js',
-                       'js/payload.json',
-                       'sw.js',
-                       'js/templates.js',
-                       'js/views.js']
+                       'http://localhost/OI_app_shell/js/init.js',
+                       'http://localhost/OI_app_shell/js/models.js',
+                       'http://localhost/OI_app_shell/js/payload.json',
+                       'http://localhost/OI_app_shell/sw.js',
+                       'http://localhost/OI_app_shell/js/templates.js',
+                       'http://localhost/OI_app_shell/js/views.js']
 
 
 self.oninstall = function (e) {

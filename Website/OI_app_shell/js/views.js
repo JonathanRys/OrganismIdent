@@ -6,7 +6,7 @@ var view = function () {
         model.subscribe("warnings");
         model.subscribe("impact");
         //...
-        
+
     }
 
 
@@ -48,9 +48,9 @@ var view = function () {
 
             //Insert the image if it exists, or hide it
             if (imageData[x]) {
-                sectionTemplate = sectionTemplate.replace('{{image}}', imageData[x]);
+                sectionTemplate = sectionTemplate.replace('{{image}}', imageData[x].imgPath);
                 //Insert the caption
-                sectionTemplate = sectionTemplate.replace('{{caption}}', model.getData('caption'));
+                sectionTemplate = sectionTemplate.replace('{{caption}}', imageData[x].imgCaption);
             } else {
                 //sectionTemplate = sectionTemplate.replace('{{image}}', '" style="display:none;');
                 sectionTemplate = sectionTemplate.replace('{{image}}', '" class="hide-parent');

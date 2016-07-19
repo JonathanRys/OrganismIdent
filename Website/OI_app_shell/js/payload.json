@@ -6,7 +6,6 @@ var data = {
     "warnings":"This pepper is very spicy: Scoville rating: 100,000-500,000",
     "impact":  "OK to harvest: not at risk",
 
-    "caption": "Capsicum chinense",
     "content":{
         "description":  ["The habanero is a variety of chili pepper. When used in English, it is sometimes spelled and pronounced haba&ntilde;ero, the tilde being added as a hyperforeignism patterned after jalape&ntilde;o. Unripe habaneros are green, and they color as they mature. Common colors are orange and red, but white, brown, yellow, green, and purple are also seen. Typically, a ripe habanero chili is 2&ndash;6 cm (0.8&ndash;2.4 in) long. Habanero chilis are very hot, rated 100,000&ndash;350,000 on the Scoville scale.",
                          "Habaneros are members of the Capsicum family that includes chilli peppers, such as bell peppers, poblanos and jalape&ntilde;os. Habaneros are indigenous to South America, Central America and the Caribbean Islands and considered to be the hottest among all varieties of chilli peppers that are cultivated commercially. As a result, they are preferred by connoisseurs of spicy dishes. However, in addition to their intense heat, habaneros also possess many other attributes.",
@@ -38,8 +37,10 @@ var data = {
                          "Taking an elevated amount of capsaicin may possibly raise your blood pressure and body temperature temporarily. Hence, it is advisable that people having high blood pressure (hypertension) or those prone to heart attacks ought to be extra cautious while consuming habanero pepper or foods cooked with it."]
     },
     "image": {
-        "description":   "./img/d06a82e9c9b83dbc283a7a8f.jpg",
-        "habitat":       "./img/d06a82e9c9b83dbc283a7a8f.jpg",
+        "description":   {"imgPath": "./img/d06a82e9c9b83dbc283a7a8f.jpg",
+                          "imgCaption": "Capsicum chinense"},
+        "habitat":       {"imgPath": "./img/d06a82e9c9b83dbc283a7a90.jpg",
+                          "imgCaption": "Habanero peppers"},
         "medicinalUses": "",
         "edibility":     ""
     },

@@ -3,14 +3,17 @@
 @font-face {
     font-family: "Open Sans";
     src: url(../fonts/OpenSans-Regular.woff);
+    font-weight: 400;
 }
 @font-face {
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans";
     src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 700;
 }
 html,
 body{
     font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
@@ -149,8 +152,7 @@ header.app-header{
 }
 header h2{
     /*Choose a different font*/
-    /*font-weight: 700;*/
-    font-family: "Open Sans Bold";
+    font-weight: 700;
     color: #333;
     margin: 0;
     padding: 5px;
@@ -199,8 +201,7 @@ details p:last-child {
 }
 .binomial-name{
     font-style: italic;
-    /*font-weight: 400;*/
-    font-family: "Open Sans";
+    font-weight: 400;
 }
 
 article .content-area{
@@ -261,6 +262,7 @@ figure{
 }
 figcaption{
     margin-bottom: 5px;
+    padding-left: 5px;
 }
 .similar-species figcaption{
     font-size: 10px;
