@@ -25,24 +25,18 @@ var template = function () {
 
     me.articleContent     = '    <p>{{paragraph}}</p>\n\n';
 
-/*
-    me.articleFragment    = '<section>\n' +
-                            '    <div>\n' +
-                            '        <h3 id="section-header">{{header}}</h3>\n' +
-                            '    </div>\n' +
-                            '    {{content}}' +
-                            '</section>\n';
-*/
 
-    me.similarSpecies     = '<aside id="side-bar">\n' +
+    me.similarSpecies     = '<section class="similar-species">\n' +
+                            '    <figure id="similar-image"><img src="{{typeImage}}">\n' +
+                            '        <figcaption>{{name}}</figcaption>\n' +
+                            '    </figure>\n' +
+                            '    <p>{{information}}</p>\n' +
+                            '</section>';
+
+    me.sideBar            = '<aside id="side-bar">\n' +
                             '    <div id="side-bar-tab" class="tab"><i class="fa fa-chevron-left"></i></div>\n' +
                             '    <header class="side-bar-header">Similar Species</header>\n' +
-                            '    <section class="similar-species">\n' +
-                            '        <figure id="similar-image"><img src="{{typeImage}}">\n' +
-                            '            <figcaption>{{name}}</figcaption>\n' +
-                            '        </figure>\n' +
-                            '        <p>{{information}}</p>\n' +
-                            '    </section>\n' +
+                            '    {{species}}\n' +
                             '</aside>';
 
     return me;

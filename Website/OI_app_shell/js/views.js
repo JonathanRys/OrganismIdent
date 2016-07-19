@@ -75,17 +75,21 @@ var view = function () {
     }
 
     function buildSidebar(){
-        var sidebarTemplate = template.similarSpecies,
-            replacements    = sidebarTemplate.match(/\{\{[A-z0-9\-]*\}\}/g),
+        var sidebarTemplate = template.sideBar,
+            speciesTemplate = template.similarSpecies,
+            finalSidebar    = '',
+            replacements    = speciesTemplate.match(/\{\{[A-z0-9\-\_]*\}\}/g),
             speciesData     = model.getData('similarSpecies');
 
-        replacements.forEach(function(value) {
-            sidebarTemplate = sidebarTemplate.replace(value, speciesData[value.replace(/[{}]/g, '')] || value);
+        speciesData.forEach(function(species) {
+            speciesTemplate = template.similarSpecies;
+            replacements.forEach(function(value) {
+                speciesTemplate = speciesTemplate.replace(value, species[value.replace(/[{}]/g, '')] || value);
+            });
+            finalSidebar += speciesTemplate;
         });
-        return sidebarTemplate;
+        return sidebarTemplate.replace('{{species}}', finalSidebar);
     }
 
     return me;
 }();
-
-

@@ -24,14 +24,16 @@ const URLS_TO_CACHE = ['http://localhost/OI_app_shell/index.html',
                        'http://localhost/OI_app_shell/fonts/OpenSans-Regular.woff',
                        'http://localhost/OI_app_shell/fonts/OpenSans-Bold.woff',
 
-                       'http://localhost/OI_app_shell/img/a530d7ce6b128c9d651e9f0a.jpg',
-                       'http://localhost/OI_app_shell/img/d06a82e9c9b83dbc283a7a8f.jpg',
-                       'http://localhost/OI_app_shell/img/d06a82e9c9b83dbc283a7a90.jpg',
+//These files are not static and should go into a different, more temporary cache
+   'http://localhost/OI_app_shell/img/a530d7ce6b128c9d651e9f0a.jpg',
+   'http://localhost/OI_app_shell/img/433fa2d90c12b3b5e6f76ac4.jpg',
+   'http://localhost/OI_app_shell/img/d06a82e9c9b83dbc283a7a8f.jpg',
+   'http://localhost/OI_app_shell/img/d06a82e9c9b83dbc283a7a90.jpg',
+   'http://localhost/OI_app_shell/js/payload.json',
 
                        //'https://fonts.googleapis.com/css?family=Open+Sans:400,700',
                        'http://localhost/OI_app_shell/js/init.js',
                        'http://localhost/OI_app_shell/js/models.js',
-                       'http://localhost/OI_app_shell/js/payload.json',
                        'http://localhost/OI_app_shell/sw.js',
                        'http://localhost/OI_app_shell/js/templates.js',
                        'http://localhost/OI_app_shell/js/views.js']

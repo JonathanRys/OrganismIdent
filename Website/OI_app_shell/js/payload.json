@@ -44,9 +44,14 @@ var data = {
         "medicinalUses": "",
         "edibility":     ""
     },
-    "similarSpecies": {
+    "similarSpecies": [{
+        "typeImage": "./img/433fa2d90c12b3b5e6f76ac4.jpg",
+        "name": "Capsicum frutescens",
+        "information":"This species includes the Tabasco pepper."
+    },
+    {
         "typeImage": "./img/a530d7ce6b128c9d651e9f0a.jpg",
         "name": "Capsicum annuum",
         "information":"This species includes bell peppers."
-    }
+    }]
 }

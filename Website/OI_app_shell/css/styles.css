@@ -252,6 +252,8 @@ aside{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: none;
+    max-height: 365px;
+    overflow-y: scroll;
     position: absolute;
     right: 0;
     width: 20%;
