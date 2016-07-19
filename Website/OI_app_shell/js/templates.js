@@ -36,7 +36,9 @@ var template = function () {
     me.sideBar            = '<aside id="side-bar">\n' +
                             '    <div id="side-bar-tab" class="tab"><i class="fa fa-chevron-left"></i></div>\n' +
                             '    <header class="side-bar-header">Similar Species</header>\n' +
-                            '    {{species}}\n' +
+                            '    <div class="scroller">\n' +
+                            '        {{species}}\n' +
+                            '    </div>\n' +
                             '</aside>';
 
     return me;

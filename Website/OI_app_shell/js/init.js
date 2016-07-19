@@ -79,7 +79,7 @@ window.onload = function() {
     //    Side-bar slide event
     var sideBarTab = document.getElementById('side-bar-tab');
 
-    sideBarTab.addEventListener('click', function(){
+    sideBarTab.addEventListener('click', function(e){
         var sideBar = document.getElementById('side-bar'),
             tab = document.getElementById('side-bar-tab'),
             content = document.getElementById('main-content');
@@ -87,11 +87,13 @@ window.onload = function() {
         if (sideBar.style.right === '-20%') {
             sideBar.style.right = '0';
             content.style.width = '80%';
+            //tab.style.right = '20%';
             tab.childNodes[0].className = 'fa fa-chevron-left';
         }
         else {
             sideBar.style.right = '-20%';
             content.style.width = '100%';
+            //tab.style.right = '0';
             tab.childNodes[0].className = 'fa fa-chevron-right';
 
         }

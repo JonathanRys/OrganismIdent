@@ -43,20 +43,6 @@ body{
     float: right;
     font-size: 1.1em;
 }
-.tab{
-    background-color: #ccc;
-    border: 1px solid black;
-    border-right: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    left: 0;
-    margin-left: -20px;
-    padding: 2px;
-    position: absolute;
-    top: 43%;
-}
 .arrow{
     transform: rotate(45deg);
     height: 10px;
@@ -147,11 +133,12 @@ header{
     position: relative;
 }
 header.app-header{
-    background-color: #5494d5; /*#54a4e5; old color*/
+    background-color: #5494d5; /*#54a4e5; old yellow color*/
     border-bottom: 1px solid black;
 }
 header h2{
     /*Choose a different font*/
+    /*font-family: "Open Sans Bold";*/
     font-weight: 700;
     color: #333;
     margin: 0;
@@ -238,6 +225,11 @@ article .content-area{
 #similar-image{
     
 }
+.scroller{
+    overflow-y: scroll;
+    max-height: 335px;
+
+}
 header.side-bar-header{
     background: #ccc;
     border-bottom: 1px solid black;
@@ -253,8 +245,6 @@ aside{
     border-bottom-left-radius: 5px;
     border-right: none;
     max-height: 365px;
-    overflow-y: scroll;
-    position: absolute;
     right: 0;
     width: 20%;
 }
@@ -265,6 +255,9 @@ figure{
 figcaption{
     margin-bottom: 5px;
     padding-left: 5px;
+}
+.similar-species{
+    border-bottom: 3px double #aaa;
 }
 .similar-species figcaption{
     font-size: 10px;
@@ -277,4 +270,20 @@ figcaption{
     font-size: 12px;
     padding: 0 10px 0;
 
+}
+.tab{
+    background-color: #ccc;
+    border: 1px solid black;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    left: 0;
+    margin-left: -20px;
+    padding: 2px;
+    position: absolute;
+    right: 20%;
+    top: 160px;
+    width: 14px;
 }
