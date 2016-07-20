@@ -75,6 +75,15 @@ window.onload = function() {
         }
     });
 
+    //Menu mouseleave events
+    menuList.addEventListener('mouseleave', function(e){
+        e.target.style.display = 'none';
+    });
+
+    historyList.addEventListener('mouseleave', function(e){
+        e.target.style.display = 'none';
+    });
+
     // Side-bar events
     //    Side-bar slide event
     var sideBarTab = document.getElementById('side-bar-tab');
