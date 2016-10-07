@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <!--<link rel="import" href="templates.html"> import the templates as js strings-->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" href="favicon.ico">
+        <!--https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css-->
+        <link rel="stylesheet" href="./css/font-awesome.min.css">
+        <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
+
+        <title>Organism Identifier</title>
+    </head>
+    <body>
+
+        <main>
+            <article id="main">
+            </article>
+        </main>
+        <div id="fixed-header-content">
+            <nav>
+                <div class="actions">
+                    <i id="history-icon" class="fa fa-chevron-down"></i>
+                    <ul id="history-list" class="menu-list">
+                        <div class="arrow arrow-left"></div>
+                        <li id="history" class="menu-item">History</li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <i id="edible" class="fa fa-cutlery"></i>
+                    <i id="warnings" class="fa fa-warning"></i>
+                    <i id="impact" class="fa fa-envira"></i>
+                </div>
+                <div class="menu">
+                    <i id="menu-icon" class="fa fa-navicon"></i>
+
+                    <ul id="menu-list" class="menu-list">
+                        <div class="arrow arrow-right"></div>
+                        <li id="search" class="menu-item">Search</li>
+                        <li id="submit" class="menu-item">Submit new image</li>
+                        <li id="options" class="menu-item">Options</li>
+                    </ul>
+                </div>
+            </nav>
+            <header class="app-header">
+                <h2>Organism Identifier</h2>
+            </header>
+        </div>
+
+        <script>
+            // Install the service worker
+            if (navigator.serviceWorker) {
+                navigator.serviceWorker.register('./sw.js').then(function(reg){
+                    console.log('Service worker running with scope:', reg.scope);
+                }).catch(function(err){
+                    console.log('Service worker error:', err);
+                });
+            } else {
+                console.log('Service Workers aren\'t supported in this browser.');
+            }
+        </script>
+
+        <!--HTML templates-->
+        <script src="./js/templates.js"></script>
+
+        <!-- MVC Scripts -->
+        <script src="./js/models.js"></script>
+        <script src="./js/views.js"></script>
+
+        <!--This is a mock payload-->
+        <script src="./js/payload.json"></script>
+
+
+        <script>
+            // The service worker and/or backend will handle all of this in the future
+            var contentArea = document.getElementById('main');
+            // Load the mock payload into the model.
+            model.populate(data);
+            // 
+            contentArea.innerHTML = view.render();
+        </script>
+
+
+        <script src="./js/init.js"></script>
+        <script>
+        </script>
+    </body>
+</html>
