@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_restful import Api, Resource
 from flask_sqlalchemy import SQLAlchemy 
 import json
@@ -68,6 +68,9 @@ class AnimalImages(Resource):
         json_response['images'] = [record.as_dict for record in SpeciesImage.query.filter_by(id=species_id)]
         return json_response
 
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 api.add_resource(Animal, '/species/<int:species_id>')
 api.add_resource(AnimalImages, '/species/<int:species_id>/images')
